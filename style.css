@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* CAMBIO: Añadido para centrado vertical */
+    min-height: 100vh; /* CAMBIO: Añadido para que el body ocupe toda la altura */
+    background: black; /* CAMBIO: Fondo negro */
+    margin: 0; /* CAMBIO: Quita márgenes por defecto */
+    padding: 0; /* CAMBIO: Quita padding por defecto */
+}
+
+.post-header{
+    width: 100%;
+    display: flex; /* CAMBIO: Sobrescribe inline flex-direction */
+    flex-direction: row; /* CAMBIO: Fuerza dirección a fila */
+    justify-content: space-between; /* CAMBIO: Empuja elementos a los extremos */
+    align-items: center; /* CAMBIO: Centra verticalmente */
+    padding: 5px 20px; /* CAMBIO: Ajustado para menos espacio superior */
+    box-sizing: border-box;
+    margin-top: 0; /* CAMBIO: Elimina margin-top negativo */
+}
+
+.post{
+    width: 400px;
+    max-width: 90%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* CAMBIO: Sombra opcional */
+}
+
+.icon-html {
+    font-size: 28px;
+    margin-top: 0; /* CAMBIO: Elimina margen superior */
+}
+
+.words {
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom: 0; /* CAMBIO: Elimina margen negativo */
+    display: flex; /* CAMBIO: Convierte en flex container */
+    flex-direction: column; /* CAMBIO: Apila HTML5 y Rigoberto */
+    line-height: 1.2;
+}
+
+.words h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.name{
+    font-weight: normal;
+}
+
+.menu{
+    font-size: 30px;
+    margin-left: auto; /* CAMBIO: Empuja menú a la derecha */
+    margin-top: 0; /* CAMBIO: Elimina margen-top negativo */
+    align-items: center; /* CAMBIO: Centra ícono verticalmente */
+}
+
+.post-img{
+    width: 100%;
+    font-size: 0;
+    line-height: 0; 
+    margin-top: 0; /* CAMBIO: Elimina margen superior */
+    overflow: hidden; /* CAMBIO: Asegura que la imagen no se desborde */
+}
+
+.post-img img {
+    display: block; /* CAMBIO: Elimina espacio bajo la imagen */
+    width: 100%;
+    height: auto;
+    margin-top: 0; /* CAMBIO: Elimina margen superior */
+}
+
+.post-icons {
+    width: 100%; /* CAMBIO: Asegura ancho completo */
+    display: flex; /* CAMBIO: Para alinear iconos */
+    justify-content: flex-start; /* CAMBIO: Alinea iconos a la izquierda */
+    align-items: center; /* CAMBIO: Centra iconos verticalmente */
+    padding: 10px 20px; /* CAMBIO: Espacio alrededor de iconos */
+    box-sizing: border-box;
+    margin: 0; /* CAMBIO: Elimina márgenes no deseados */
+}
+
+.post-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.bookmark {
+    margin-left: auto; /* CAMBIO: Empuja bookmark a la derecha */
+   
+}
+
+.post-body {
+    width: 100%;
+    padding: 0 20px 20px 20px; /* CAMBIO: Ajustado padding */
+    box-sizing: border-box;
+    margin-top: 0; /* CAMBIO: Elimina margin-top negativo */
+}
+
+.post-body p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.post-body p:first-child {
+    margin-top: 0;
+}
